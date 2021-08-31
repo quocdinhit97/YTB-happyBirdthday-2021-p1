@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
     background-image: -webkit-gradient(
         radial,
@@ -12,6 +14,7 @@ body {
     background-image: -moz-radial-gradient(#374566, #010203);
     background-image: -o-radial-gradient(#374566, #010203);
     background-image: radial-gradient(#374566, #010203);
+    font-family: 'Lobster', cursive;
 }
 span {
     text-transform: uppercase;
@@ -422,4 +425,10 @@ h1 {
 }
 .swal-overlay {
     background-color: rgba(218, 57, 177, 0.45);
+}
+
+.swal-text {
+    font-size: 20px;
+    font-weight: 200;
+    word-spacing: 5px;
 }

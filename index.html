@@ -27,16 +27,6 @@
             src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
         ></script>
         <meta content="clickberry-extension-here" />
-        <meta content="clickberry-extension-here" />
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-        <style type="text/css"></style>
-        <script
-            type="text/javascript"
-            src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"
-        ></script>
-        <meta content="clickberry-extension-here" />
     </head>
 
     <body>
@@ -69,14 +59,18 @@
                 <!-- 4. Tên của người đó -->
                 <h1 onclick="showMessage()" class="avatar__title">Quốc Định</h1>
             </div>
+            
+            <!-- 5. Phần nhạc -->
+            <audio id="player" autoplay loop>
+                <source src="./music.mp3" type="audio/mp3">
+            </audio>
         </div>
-        <script></script>
         <script>
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage("resize", "*");
             }
             function showMessage() {
-                // 5. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+                // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
                 swal({
                     title: "Lời nhắn", // Tiêu đề của popup
                     text: "Em yêu của anh, hôm nay là sinh nhật em, ngày này năm sau cũng là sinh nhật em và các năm sau nữa sau nữa cũng là sinh nhật em. Nhưng anh mong điều tốt lành sẽ đến với anh mỗi ngày và hãy để anh được ở bên em trong suốt cuộc đời này, để được yêu thương và chăm sóc cho em. Yêu em nhiều nhiều lắm!", // Nội dung lời nhắn
